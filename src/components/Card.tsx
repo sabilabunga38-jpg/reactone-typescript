@@ -1,13 +1,10 @@
-function Card() {
+function Header() {
   return (
-    <div className="card">
-      <h2>Belajar React</h2>
-
-      <p>
-        Hari kedua belajar membuat component.
-      </p>
-    </div>
+    <header className="header">
+      <h1>Blue Ocean Cafe 💙</h1>
+      <p>React TypeScript Learning Project</p>
+    </header>
   );
 }
 
-export default Card;
+export default Header;
