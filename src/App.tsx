@@ -6,7 +6,7 @@ import Card from "./components/Card";
 import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
 import Counter from "./components/Counter";
-
+import Form from "./components/Form";
 import sabilaaa from "./assets/sabilaaa.jpeg";
 
 import cheesecake from "./assets/products/cheesecake.png";
@@ -104,6 +104,7 @@ function App() {
 
           
          <Counter />
+         <Form />
         </main>
 
       </div>

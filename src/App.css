@@ -194,6 +194,73 @@ body {
   background: #49aef0;
   transform: translateY(-3px);
 }
+/* FORM */
+
+.form-card {
+  margin-top: 40px;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(100,150,200,0.15);
+  text-align: center;
+}
+
+.form-card h2 {
+  color: #24527a;
+  margin-bottom: 25px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-card input {
+  padding: 14px;
+  border: 2px solid #b8dcff;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-card input:focus {
+  border-color: #4da8da;
+}
+
+.form-card button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #6fc7ff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-card button:hover {
+  background: #49aef0;
+}
+
+.error {
+  margin-top: 15px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.user-result {
+  margin-top: 25px;
+  padding: 20px;
+  background: #eef7ff;
+  border-radius: 15px;
+  color: #24527a;
+}
+
+.user-result h3 {
+  margin-bottom: 15px;
+}
 .footer {
   background: #cfeeff;
   color: #234b70;
