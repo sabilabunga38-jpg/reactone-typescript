@@ -6,7 +6,7 @@ function Sidebar() {
       <ul>
         <li>Home</li>
         <li>About</li>
-        <li>Project</li>
+        <li>Product</li>
         <li>Contact</li>
       </ul>
     </aside>
