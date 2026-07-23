@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
+import Counter from "./components/Counter";
 
 import sabilaaa from "./assets/sabilaaa.jpeg";
 
@@ -84,7 +85,6 @@ function App() {
 
           <Card />
 
-
           <div className="product-list">
 
             {
@@ -102,7 +102,8 @@ function App() {
 
           </div>
 
-
+          
+         <Counter />
         </main>
 
       </div>

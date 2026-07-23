@@ -19,14 +19,14 @@ function Counter() {
 
   return (
     <div className="counter">
-      <h2>React Counter</h2>
-
-      <h1>{count}</h1>
-
       <div className="button-group">
-        <button onClick={kurang}>-</button>
-        <button onClick={reset}>Reset</button>
         <button onClick={tambah}>+</button>
+
+        <span className="count-number">{count}</span>
+
+        <button onClick={kurang}>-</button>
+
+        <button onClick={reset}>Reset</button>
       </div>
     </div>
   );

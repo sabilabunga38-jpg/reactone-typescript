@@ -145,7 +145,55 @@ body {
   color: #3b82c4;
   font-weight: bold;
 }
+/* COUNTER */
 
+.counter {
+  margin-top: 50px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(100,150,200,0.15);
+}
+
+.counter h2 {
+  margin-bottom: 30px;
+  color: #24527a;
+  font-size: 26px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.count-number {
+  min-width: 70px;
+  font-size: 45px;
+  font-weight: bold;
+  color: #4da8da;
+  text-align: center;
+}
+
+.button-group button {
+  width: 80px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #6fc7ff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-group button:hover {
+  background: #49aef0;
+  transform: translateY(-3px);
+}
 .footer {
   background: #cfeeff;
   color: #234b70;
