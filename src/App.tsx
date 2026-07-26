@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
 import Counter from "./components/Counter";
 import Form from "./components/Form";
+
 import sabilaaa from "./assets/sabilaaa.jpeg";
 
 import cheesecake from "./assets/products/cheesecake.png";
@@ -57,11 +58,14 @@ function App() {
     <>
       <Header />
 
+
       <div className="layout">
 
         <Sidebar />
 
+
         <main className="main-content">
+
 
           <div className="profile-card">
 
@@ -71,19 +75,30 @@ function App() {
               className="profile-image"
             />
 
-            <h1>Sabila Bunga Sakinah</h1>
 
-            <h3>Front-End Developer</h3>
+            <h1>
+              Sabila Bunga Sakinah
+            </h1>
+
+
+            <h3>
+              Front-End Developer
+            </h3>
+
 
             <p>
               Halo! Selamat datang di website React TypeScript saya.
               Hari ini saya sedang belajar membuat component dan props.
             </p>
 
+
           </div>
 
 
+
           <Card />
+
+
 
           <div className="product-list">
 
@@ -91,23 +106,35 @@ function App() {
               produk.map((item, index) => (
 
                 <ProductCard
+
                   key={index}
+
                   nama={item.nama}
+
                   harga={item.harga}
+
                   gambar={item.gambar}
+
                 />
 
               ))
             }
 
+
           </div>
 
-          
-         <Counter />
-         <Form />
+
+
+          <Counter />
+
+          <Form />
+
+
         </main>
 
+
       </div>
+
 
 
       <Footer />

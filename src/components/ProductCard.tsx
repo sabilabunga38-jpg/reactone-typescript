@@ -1,16 +1,14 @@
-type ProductProps = {
+type ProductCardProps = {
   nama: string;
   harga: string;
   gambar: string;
 };
 
-
 function ProductCard({
   nama,
   harga,
   gambar
-}: ProductProps) {
-
+}: ProductCardProps) {
   return (
     <div className="product-card">
 
@@ -30,6 +28,5 @@ function ProductCard({
     </div>
   );
 }
-
 
 export default ProductCard;

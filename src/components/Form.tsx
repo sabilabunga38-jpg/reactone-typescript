@@ -1,18 +1,23 @@
 import { useState } from "react";
 
 function Form() {
+  const [nama, setNama] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
-  const [nama, setNama] = useState("");
-  const [email, setEmail] = useState("");
-
-  const [dataUser, setDataUser] = useState({
+  const [dataUser, setDataUser] = useState<{
+    nama: string;
+    email: string;
+  }>({
     nama: "",
     email: ""
   });
 
-  const [error, setError] = useState("");
+  const [error, setError] = useState<string>("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+
+  const handleSubmit = (
+    e: React.FormEvent<HTMLFormElement>
+  ) => {
     e.preventDefault();
 
     if (nama === "" || email === "") {
@@ -36,8 +41,9 @@ function Form() {
     <div className="form-card">
 
       <h2>
-        Form Data Pengunjung 
+        Form Data Pengunjung
       </h2>
+
 
       <form onSubmit={handleSubmit}>
 
@@ -47,6 +53,7 @@ function Form() {
           value={nama}
           onChange={(e) => setNama(e.target.value)}
         />
+
 
         <input
           type="email"
@@ -78,16 +85,19 @@ function Form() {
           <div className="user-result">
 
             <h3>
-              Data Berhasil Disimpan ✅
+              Data Berhasil Disimpan 
             </h3>
+
 
             <p>
               Nama : {dataUser.nama}
             </p>
 
+
             <p>
               Email : {dataUser.email}
             </p>
+
 
           </div>
         )

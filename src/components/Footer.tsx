@@ -2,7 +2,11 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        © 2026 Sabila Bunga Sakinah
+        © 2026 Sabilaaa
+      </p>
+
+      <p>
+        React Learning Project
       </p>
     </footer>
   );
